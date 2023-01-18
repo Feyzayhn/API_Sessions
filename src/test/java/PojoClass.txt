@@ -1,0 +1,15 @@
+#Pojo class olusturulurken izlenecek adimlar
+
+ 1.Tum key'ler icin private variable'lar oluturuyoruz
+
+ 2.Tum parametrelerle ve parametresiz constractor olusturuyoruz
+
+ 3. Public Getter ve Setter method'larini olusturuyoruz
+
+ 4. toString() method'unu olusturuyoruz
+
+
+
+ @JsonIgnoreProperties(ignoreUnknown = true)
+     Bu annotation aynı levelde bilinmeyen verileri
+     görmezden gelerek diğer verilerin bu class tipinde Pojo class'a çevrilmesine yarıyor.

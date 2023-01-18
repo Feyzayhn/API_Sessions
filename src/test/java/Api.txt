@@ -1,0 +1,96 @@
+
+   ONEMLI BU SITE ==> https://petstore.swagger.io
+
+API( Application Programming Interface)
+        => Uygulama Programlama Arayuzu
+
+- API testi, bir uygulamanin islevselligi, guvenirligi, performansi ve guvenligi acisindan beklentileri
+             karsilayip karsilamadigini kontrol etmek icin yapilir.
+
+-> API ve Web Service Arasindaki Fark ?
+             Api ve Web Service,  uygulamalar arasinda iletisim olustururlar
+
+Web Service
+         - Aralarindaki tek fark Web Service iki uygulama arasindaki iletisimi INTERNET araciligi ile yapar.
+
+API
+         - Microsoft Word gibi masaustu uygulamalari, INTERNETE'e ihtiyac duymadan kendi API'larini kullanir.
+           Bu yuzden Word kullandigimizda Microsoft API kullaniyoruz.
+
+
+=> NOT !!!
+          Butun Web Service'ler API'dir. Ancak butun API'lar Web Service DEGILDIR.
+
+
+  Ortak HTTP Status Kodlar
+
+          200(OK) => Talep karsilandi. Request gerceklesti.
+
+          201(CREATED) => Database'e gonderilen datanin olusturuldugunu soyler(200 olarak da gelebilir)
+
+          204(NO CONTENT) => Talep yerine getirildi ancak size cevap (response) donemiyoruz
+
+          400(BAD REQUEST) => Syntax yanlis,yuksek boyutlu data ya da diger kullanici hatasi
+
+          403(FORBIDDEN) => Bu data'ya erisim izniniz yok (400 olarak da gelebilir)
+
+          404(NOT FOUND) => Aranilan Data bulunamadi
+
+          500(INTERNAL SERVER ERROR) => Server kaynakli bir hatadir, server'in duzelmesini bekleriz
+
+   ****  INTERVIEW  ****
+     1-  API testinde ilk test edecegimiz sey  HTTP Status Codes ' a bakmaktir
+     2-  ve daha sonra Data Accuracy kontrol edecegiz yani gelen datanin dogrulugunu kontrol ediyoruz
+
+
+
+=> Api Testlerinde hangi programlari kullaniriz ?
+
+         1- Postman
+
+         2- SOAP UI
+            xml formatinda calisir
+
+         3-REST/ RestFul
+           REST=> Representational State Transfer
+           Rest Api, xml ve json(Java Script Object Notation) formatlarinin ikisini de kullanabilir, kullanimi daha yaygindir
+
+
+         Bir REST Request'i Nelerden Olusur ? (HTTP methodlari)
+
+             GET, datalari okumak icindir
+             POST, yeni data olusturmak icindir
+             PUT, datalari tamamen guncellemek icin
+             PATCH, datalari kismen guncellemek icin
+             DELETE, datalari silmek icin
+
+          ***// PUT ve PATCH de var olan data üzerinde update yapildigi icin baseUrl yanindaki id silinmez
+          ***// POST ile ise sifirdan bir data ekledigimiz icin baseUrl deki id yi siliyoruz
+
+         API Endpoint Nedir ?
+         Api'in istek gonderdigi ve kaynagin yasadigi yer, Endpoint'tir.
+
+             Swagger Nedir ?
+         - API'nizin, zayif kaynak kodu bilgisine sahip olsalar bile gelistiriciler ve testerlar tarafindan okunmasi ve
+           anlasilmasi kolay ortak bir dil kullanarak tanimlamak icin bir framework'tur.
+         - API belgeleri icin SWAGGER kullanilir. Swagger bana API endpoint'leri verir ve bunlarin nasil kullanilacagi
+           hakkinda bilgilendirir.
+
+
+tum 200 ler başarali kod
+tum 400 ler basarisiz kod
+tum 500 ler server hatasi
+
+INTERVİEW'de bu SORULAR SORULABİLİR CALİS SLAYTAN
+1- Apı nedir == Kullanici arayüzü database testi icin kullanilir BUNU HTTP protokollerle yapar sadece internette degil pc de kurdugumuz wordde kutuphanelerde de vardir
+
+2- Api nasil calisir == request(istekler) aldiginda response(geri donus) saglar
+
+3- Api ve Web Service farki == Apı icin internete ihtiyac yok digerinde var
+4- SOAP VE REST FARKI == soap finansal ve odeme noktalarindaki uygulamalarda kullanilir rest guvenli SOAP daha da guvenli
+                         rest hızli soap yavastır
+5- POSTMAN
+6- JSON files
+
+
+
